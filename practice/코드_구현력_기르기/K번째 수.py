@@ -8,12 +8,10 @@ ex)
 => 7
 '''
 
-import sys
-
 T = int(input())
 for i in range (T) :
     N, s, e, k = map(int, input().split())
-    num = list(map(int,sys.stdin.readline().rstrip().split()))
+    num = list(map(int,input().split()))
     num_list = num[s-1 : e]
     num_list.sort()
     print("#{0} {1}".format(i + 1 , num_list[k-1]))
