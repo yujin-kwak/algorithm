@@ -5,10 +5,9 @@
 N장의 카드에는 같은 숫자의 카드가 있을 수 있고, 중복된 숫자는 무시 해야함.
 ex) 만들어진 수 : 25 25 23 23 22 20 19 => K=3 : 22
 '''
-import sys
 
 N, K = map(int,input().split())
-num = list(map(int,sys.stdin.readline().rstrip().split()))
+num = list(map(int,input().split()))
 res = set()
 
 for i in range(N) :
