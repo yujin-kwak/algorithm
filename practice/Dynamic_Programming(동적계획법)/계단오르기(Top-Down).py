@@ -4,7 +4,7 @@ def DFS(len):
     if len == 1 or len == 2:
         return len
     else:
-        dy[len] = DFS[len - 2] + DFS[len - 1]
+        dy[len] = DFS(len - 2) + DFS(len - 1)
         return dy[len]
 
 if __name__=="__main__":
