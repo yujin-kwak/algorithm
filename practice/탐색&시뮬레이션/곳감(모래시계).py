@@ -42,7 +42,7 @@ for i in range(m):
             board[row-1].append(board[row-1].pop(0)) # 맨 앞의 값을 빼고 나머지를 앞으로 당김, 뺀 값을 맨 뒤에 추가
     else:
         for _ in range(cnt):
-            board[row-1].insert(0, board[row-1].pop())
+            board[row-1].insert(0, board[row-1].pop()) # 맨 뒤의 값을 뺴고 앞에 추가
 
 s = 0
 e = n - 1
