@@ -19,4 +19,4 @@ for test_case in range(1, T + 1):
     min_value = 200001
     bfs(0, 0)
     
-    print('#{} {}'.format(test_case, min_value))
+    print('#{} {}'.format(test_case, min_value - B))
